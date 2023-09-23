@@ -5,15 +5,25 @@
 - PDFQuery
 
 #### Note
-Tesseract and PDFQuery are the only ones that can handle scanned docs.
+Tesseract is the only one that can handle scanned docs and digitally born PDFs.
+However, there may be a lack of accuracy as Tesseract uses OCR.
 
-PDFQuery is easier to setup and requires minimal installations in comparison to Poppler & Tesseract combo.
-
-#### Note
-Tesseract has higher non-newline character count of extraction in comparison to PDFQUery.
+Other solutions can work with high accuracy on digitally born PDFs (text in PDF) but will fail for scanned PDFs.
 
 #### Note
-Multilingual text extraction (in Hindi) is unreliable and useless.
+Multilingual text extraction (in Hindi) is unreliable.
+
+
+#### Note
+If you get this error when using `Fitz` solution:
+```
+AttributeError: module 'fitz' has no attribute 'open'
+```
+Then reinstall `PyMuPDF` using:
+```
+pip uninstall PyMuPDF
+pip install PyMuPDF
+```
 
 
 ## Gettig Started
