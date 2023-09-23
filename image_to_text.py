@@ -4,15 +4,13 @@ from PIL import Image
 import pytesseract
 
 # If you don't have tesseract executable in your PATH, include the following
-pytesseract.pytesseract.tesseract_cmd = os.path.abspath('/Program Files/Tesseract-OCR/')
-
-exit(0)
+pytesseract.pytesseract.tesseract_cmd = os.path.abspath('/Program Files/Tesseract-OCR/tesseract.exe')
 
 # If you don't have tesseract executable in your PATH, include the following:
 # Example tesseract_cmd = r
 
 # Simple image to string
-print(pytesseract.image_to_string(Image.open('images/TXT Mines and Minerals Act.pdf/1.png')))
+print(pytesseract.image_to_string(Image.open('./images/TXT Mineral Auction Amendment Rules.pdf/1.png'), lang='hin'))
 
 # In order to bypass the image conversions of pytesseract, just use relative or absolute image path
 # NOTE: In this case you should provide tesseract supported images or tesseract will return error

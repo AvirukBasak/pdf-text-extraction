@@ -52,3 +52,10 @@ Docs: https://tesseract-ocr.github.io/tessdoc/Installation.html
 
 On Windows, you'll be able to download the installer.
 Select to download additional scripts and Indian languages during insallation.
+
+### Run in Powershell
+```
+python image_to_text.py
+```
+
+Output of this is in [output_image_to_text.md](output_image_to_text.md).
