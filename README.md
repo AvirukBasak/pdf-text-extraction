@@ -32,7 +32,7 @@ Poppler direct download link for Windows: https://github.com/oschwartz10612/popp
 You will need to add the `bin/` directory i.e. `poppler-23.08.0/Library/bin/` to your PATH.
 
 ### Tesseract-OCR
-Docs: https://tesseract-ocr.github.io/tessdoc/Installation.html
+Tesseract-OCR direct download link for Windows: https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-5.3.1.20230401.exe
 
 On Windows, you'll be able to download the installer.
 Select to download additional scripts and Indian languages during insallation.
@@ -64,4 +64,4 @@ It may take over a minute or two in some cases.
 ## References
 - PDF to Image GFG guide: https://www.geeksforgeeks.org/convert-pdf-to-image-using-python
 - PyTesseract Docs: https://pypi.org/project/pytesseract
-- Tesseract Docs: Docs: https://tesseract-ocr.github.io/tessdoc/Installation.html
+- Tesseract Docs: https://tesseract-ocr.github.io/tessdoc/Installation.html
