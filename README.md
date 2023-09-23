@@ -29,3 +29,5 @@ You will need to add the `bin/` directory i.e. `poppler-23.08.0/Library/bin/` to
 ```
 python convert_to_image.py [list of PDF file paths]
 ```
+
+A new directory called images will appear.
