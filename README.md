@@ -40,7 +40,7 @@ You MUST use a virtual environment as we'll be installing an ungodly number of p
 ### PIP
 Run the following after activating your environment:
 ```
-python setyp.py
+python setup.py
 ```
 
 ### Poppler
