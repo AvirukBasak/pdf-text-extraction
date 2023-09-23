@@ -2,8 +2,17 @@
 - Fitz
 - PyPDF2
 - Poppler and Tesseract
+- PDFQuery
 
-## Note
+#### Note
+Tesseract and PDFQuery are the only ones that can handle scanned docs.
+
+PDFQuery is easier to setup and requires minimal installations in comparison to Poppler & Tesseract combo.
+
+#### Note
+Tesseract has higher non-newline character count of extraction in comparison to PDFQUery.
+
+#### Note
 Multilingual text extraction (in Hindi) is unreliable and useless.
 
 
