@@ -15,13 +15,13 @@ def run_soln(path):
         return run_tesseract(path, lang='eng')
 
 
-filenames = [
+PDF_FILES_LIST = [
     'TXT Mines and Minerals Act.pdf',
     'TXT Mineral Auction Amendment Rules.pdf',
     'IMG Mines and Minerals Act 1957.pdf',
 ]
 
-path = f'pdfs/{filenames[2]}'
+FILE_NOW = f'pdfs/{PDF_FILES_LIST[2]}'
 
 print('possible solutions:')
 print('  1. Fitz')
@@ -33,10 +33,10 @@ if soln < 1 or soln > 3:
     print(f'no such solution: {soln}')
     exit(1)
 
-yn = input(f'confirm target pdf \'{path}\' (Y/n): ')
+yn = input(f'confirm target pdf \'{FILE_NOW}\' (Y/n): ')
 if yn != 'y' and yn != 'n' and yn != '':
     print('invalid confirm, enter \'y\' or \'n\'')
     exit(1)
 
-text = run_soln(path)
+text = run_soln(FILE_NOW)
 print(text)

@@ -1,13 +1,11 @@
-# Data Extraction
-- From PDF
-- From Images
-- From Web
+# PDF Text Extraction
+- Fitz
+- PyPDF2
+- Poppler and Tesseract
 
-## Conclusion
-Output of this is in [output_image_to_text.md](output_image_to_text.md) (Hindi Test).
-Another test output is in [output_image_to_text_eng.md](output_image_to_text_eng.md) (English Test).
+## Note
+Multilingual text extraction (in Hindi) is unreliable and useless.
 
-Multilingual OCR using Tesseract on Hindi is unreliable and useless.
 
 ## Gettig Started
 Open this project root in Powershell and run
@@ -15,57 +13,51 @@ Open this project root in Powershell and run
 python -m venv env
 .\env\Scripts\Activate.ps1
 ```
+You MUST use a virtual environment as we'll be installing an ungodly number of packages and dependencies.
 
-## Converting PDFs into Images
-GFG Guide: https://www.geeksforgeeks.org/convert-pdf-to-image-using-python
 
-### Install dependecies
-#### PDF2Image
+## Install dependecies
+
+### PIP
+Run the following after activating your environment:
 ```
-pip install pdf2image
+python setyp.py
 ```
 
-#### Poppler
-PDF2Image requires you have poppler downloaded.
+### Poppler
+PDF2Image, which is a dependency of this project, requires you have `Poppler` downloaded.
 
-Direct download link: https://github.com/oschwartz10612/poppler-windows/releases/download/v23.08.0-0/Release-23.08.0-0.zip
+Poppler direct download link for Windows: https://github.com/oschwartz10612/poppler-windows/releases/download/v23.08.0-0/Release-23.08.0-0.zip
 
 You will need to add the `bin/` directory i.e. `poppler-23.08.0/Library/bin/` to your PATH.
 
-### Run in Powershell
-```
-python convert_to_image.py '.\pdfs\TXT Mineral Auction Amendment Rules.pdf' '.\pdfs\TXT Mines and Minerals Act.pdf'
-```
-
-A new directory called images will appear.
-
-## Converting Images into Text
-
-### Install dependecies
-#### PyTesseract
-Ref: https://pypi.org/project/pytesseract
-```
-pip install pytesseract
-```
-
-#### PIL
-```
-pip install pillow
-```
-
-#### Tesseract
+### Tesseract-OCR
 Docs: https://tesseract-ocr.github.io/tessdoc/Installation.html
 
 On Windows, you'll be able to download the installer.
 Select to download additional scripts and Indian languages during insallation.
 
-### Run in Powershell
+
+## Run experiment
+- Set `POPPLER_PATH` and `TESSERACT_PATH` in `solutions/tesseract_ocr.py`
+- Put your PDF files in `pdfs/`
+- List you PDF files by setting `PDF_FILES_LIST` and `FILE_NOW` in `run.py`
+
+Once setup is done, run:
 ```
-python image_to_text.py
+python run.py
 ```
 
-## Conclusion
-Output of this is in [output_image_to_text.md](output_image_to_text.md) (Hindi Test).
-Another test output is in [output_image_to_text_eng.md](output_image_to_text_eng.md) (English Test).
+Select a solution and see the text getting extracted and printed.
 
-Multilingual OCR using Tesseract on Hindi is unreliable and useless.
+If you use the `Tesseract` solution, you will also get a printed list of languages installed with `Tesseract-OCR`
+
+Note that text extraction may take a long time depending on number of pages in PDF.
+It may take over a minute or two in some cases.
+
+
+## References
+- PDF to Image: https://www.geeksforgeeks.org/convert-pdf-to-image-using-python
+- Poppler direct download link for Windows: https://github.com/oschwartz10612/poppler-windows/releases/download/v23.08.0-0/Release-23.08.0-0.zip
+- PyTesseract: https://pypi.org/project/pytesseract
+- Tesseract Installation: Docs: https://tesseract-ocr.github.io/tessdoc/Installation.html
