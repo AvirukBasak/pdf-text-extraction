@@ -26,9 +26,9 @@ Direct download link: https://github.com/oschwartz10612/poppler-windows/releases
 
 You will need to add the `bin/` directory i.e. `poppler-23.08.0/Library/bin/` to your PATH.
 
-### Run
+### Run in Powershell
 ```
-python convert_to_image.py [list of PDF file paths]
+python convert_to_image.py '.\pdfs\TXT Mineral Auction Amendment Rules.pdf' '.\pdfs\TXT Mines and Minerals Act.pdf'
 ```
 
 A new directory called images will appear.
