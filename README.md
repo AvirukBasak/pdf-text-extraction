@@ -3,6 +3,12 @@
 - From Images
 - From Web
 
+## Conclusion
+Output of this is in [output_image_to_text.md](output_image_to_text.md) (Hindi Test).
+Another test output is in [output_image_to_text_eng.md](output_image_to_text_eng.md) (English Test).
+
+Multilingual OCR using Tesseract on Hindi is unreliable and useless.
+
 ## Gettig Started
 Open this project root in Powershell and run
 ```
@@ -58,4 +64,8 @@ Select to download additional scripts and Indian languages during insallation.
 python image_to_text.py
 ```
 
-Output of this is in [output_image_to_text.md](output_image_to_text.md).
+## Conclusion
+Output of this is in [output_image_to_text.md](output_image_to_text.md) (Hindi Test).
+Another test output is in [output_image_to_text_eng.md](output_image_to_text_eng.md) (English Test).
+
+Multilingual OCR using Tesseract on Hindi is unreliable and useless.
