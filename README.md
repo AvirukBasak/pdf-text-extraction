@@ -56,8 +56,12 @@ Note that text extraction may take a long time depending on number of pages in P
 It may take over a minute or two in some cases.
 
 
+## Direct Download Links
+- Poppler for Windows: https://github.com/oschwartz10612/poppler-windows/releases/download/v23.08.0-0/Release-23.08.0-0.zip
+- Tesseract-OCR for Windows: https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-5.3.1.20230401.exe
+
+
 ## References
-- PDF to Image: https://www.geeksforgeeks.org/convert-pdf-to-image-using-python
-- Poppler direct download link for Windows: https://github.com/oschwartz10612/poppler-windows/releases/download/v23.08.0-0/Release-23.08.0-0.zip
-- PyTesseract: https://pypi.org/project/pytesseract
-- Tesseract Installation: Docs: https://tesseract-ocr.github.io/tessdoc/Installation.html
+- PDF to Image GFG guide: https://www.geeksforgeeks.org/convert-pdf-to-image-using-python
+- PyTesseract Docs: https://pypi.org/project/pytesseract
+- Tesseract Docs: Docs: https://tesseract-ocr.github.io/tessdoc/Installation.html
