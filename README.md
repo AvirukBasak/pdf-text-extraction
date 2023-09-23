@@ -3,14 +3,15 @@
 - From Images
 - From Web
 
-## Getting started
-GFG Guide: https://www.geeksforgeeks.org/convert-pdf-to-image-using-python.
-
+## Gettig Started
 Open this project root in Powershell and run
 ```
 python -m venv env
 .\env\Scripts\Activate.ps1
 ```
+
+## Converting PDFs into Images
+GFG Guide: https://www.geeksforgeeks.org/convert-pdf-to-image-using-python
 
 ### Install dependecies
 #### PDF2Image
@@ -31,3 +32,23 @@ python convert_to_image.py [list of PDF file paths]
 ```
 
 A new directory called images will appear.
+
+## Converting Images into Text
+
+### Install dependecies
+#### PyTesseract
+Ref: https://pypi.org/project/pytesseract
+```
+pip install pytesseract
+```
+
+#### PIL
+```
+pip install pillow
+```
+
+#### Tesseract
+Docs: https://tesseract-ocr.github.io/tessdoc/Installation.html
+
+On Windows, you'll be able to download the installer.
+Select to download additional scripts and Indian languages during insallation.
