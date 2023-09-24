@@ -48,5 +48,6 @@ if yn != 'y' and yn != 'n' and yn != '':
     print('invalid confirm, enter \'y\' or \'n\'')
     exit(1)
 
-text = run_soln(FILE_NOW)
-print(text)
+if yn == 'y' or yn == '':
+    text = run_soln(FILE_NOW)
+    print(text)
